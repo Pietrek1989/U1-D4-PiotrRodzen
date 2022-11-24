@@ -74,6 +74,14 @@ body {
 
 }
 
+.shape1 svg {
+    position: absolute;
+    height: 19px;
+    width: 29px;
+    top: 6px;
+    left: -2px;
+}
+
 .shape2 {
     background-color: #ddd8d8;
     position: absolute;
