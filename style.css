@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+.card-container {
+    width: 350px;
+    height: 500px;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.image {
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.save-text {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    height: 38px;
+    width: 70px;
+    background-color: red;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    transform: translateY(-100px);
+}
+
+.save-text span {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    z-index: 1;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.icons {
+    transform: translateY(100px);
+}
+
+.shape1 {
+    background-color: #ddd8d8;
+    width: 165px;
+    height: 34px;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 28px;
+    left: 20px;
+    border-radius: 20px;
+}
+
+.shape1 p {
+    position: absolute;
+    bottom: -11px;
+    left: 23px;
+    font-size: 1.2em;
+    font-weight: 800;
+    font-family: sans-serif;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 75%;
+
+}
+
+.shape2 {
+    background-color: #ddd8d8;
+    position: absolute;
+    height: 34px;
+    width: 40px;
+    opacity: 0.9;
+    bottom: 28px;
+    right: 104px;
+    border-radius: 20px;
+}
+
+.shape2 svg {
+    position: absolute;
+    height: 24px;
+    width: 38px;
+    top: 4px;
+}
+
+.shape3 {
+    background-color: #ddd8d8;
+    position: absolute;
+    height: 34px;
+    width: 40px;
+    opacity: 0.9;
+    bottom: 28px;
+    right: 40px;
+    border-radius: 20px;
+}
+
+.shape3 svg {
+    position: absolute;
+    height: 24px;
+    width: 38px;
+    top: 4px;
+}
+
+
+.card-container:hover .icons {
+    transform: translate(0px, 0px);
+    transition: 1s;
+}
+
+.card-container:hover .save-text {
+    transform: translate(0px, 0px);
+    transition: 1s;
+}
