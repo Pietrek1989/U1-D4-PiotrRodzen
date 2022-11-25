@@ -151,7 +151,7 @@ body {
     height: 100%;
     position: absolute;
     z-index: 2;
-    animation: slide 2s infinite 3s ease;
+    animation: slide 2s infinite 2s ease;
 
     /* 
   CSS Gradient - complete browser support from http://www.colorzilla.com/gradient-editor/ 
@@ -182,3 +182,5 @@ body {
     100% {
         transform: translateX(100%);
     }
+
+}
