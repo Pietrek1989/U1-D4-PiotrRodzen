@@ -1,186 +1,219 @@
 body {
-    margin: 0;
-    font-family: sans-serif;
+  margin: 0;
+  font-family: sans-serif;
 }
 
-
 .card-container {
-    width: 350px;
-    height: 500px;
-    margin: auto;
-    margin-top: 5%;
+  width: 350px;
+  height: 500px;
+  margin: auto;
+  margin-top: 5%;
 }
 
 .image {
-    position: relative;
-    border-radius: 50px;
-    overflow: hidden;
-    transition: all 0.5s;
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden;
+  transition: all 0.5s;
 }
 
 .save-text {
-    position: absolute;
-    top: 20px;
-    right: 25px;
-    height: 38px;
-    width: 70px;
-    background-color: red;
-    border-radius: 20px;
-    color: white;
-    text-align: center;
-    transform: translateY(-100px);
-    transition: transform 0.9s ease-out;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  height: 38px;
+  width: 70px;
+  background-color: red;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  transform: translateY(-100px);
+  transition: transform 0.9s ease-out;
 }
 
 .save-text span {
-    color: white;
-    position: absolute;
-    top: 10px;
-    right: 16px;
-    z-index: 1;
-    cursor: -webkit-grabbing;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  z-index: 1;
+  cursor: -webkit-grabbing;
 }
 
 .image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
 }
 
 .icons {
-    transform: translateY(100px);
-    transition: transform 0.9s ease-out;
+  transform: translateY(100px);
+  transition: transform 0.9s ease-out;
 }
 
 .shape1 {
-    background-color: #ddd8d8;
-    width: 165px;
-    height: 34px;
-    opacity: 0.9;
-    position: absolute;
-    bottom: 28px;
-    left: 20px;
-    border-radius: 20px;
-    cursor: -webkit-grabbing;
+  background-color: #ddd8d8;
+  width: 165px;
+  height: 34px;
+  opacity: 0.9;
+  position: absolute;
+  bottom: 28px;
+  left: 20px;
+  border-radius: 20px;
+  cursor: -webkit-grabbing;
 }
 
 .shape1 p {
-    position: absolute;
-    bottom: -11px;
-    left: 28px;
-    font-size: 1.2em;
-    font-weight: 800;
-    font-family: sans-serif;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 75%;
-
+  position: absolute;
+  bottom: -11px;
+  left: 28px;
+  font-size: 1.2em;
+  font-weight: 800;
+  font-family: sans-serif;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 75%;
 }
 
 .shape1 svg {
-    position: absolute;
-    height: 14px;
-    width: 25px;
-    top: 8px;
-    left: 1px;
-    rotate: 310deg;
+  position: absolute;
+  height: 14px;
+  width: 25px;
+  top: 8px;
+  left: 1px;
+  rotate: 310deg;
 }
 
 .shape2 {
-    background-color: #ddd8d8;
-    position: absolute;
-    height: 34px;
-    width: 40px;
-    opacity: 0.9;
-    bottom: 28px;
-    right: 104px;
-    border-radius: 20px;
-    cursor: -webkit-grabbing;
+  background-color: #ddd8d8;
+  position: absolute;
+  height: 34px;
+  width: 40px;
+  opacity: 0.9;
+  bottom: 28px;
+  right: 104px;
+  border-radius: 20px;
+  cursor: -webkit-grabbing;
 }
 
 .shape2 svg {
-    position: absolute;
-    height: 21px;
-    width: 33px;
-    top: 4px;
-    left: 3px;
+  position: absolute;
+  height: 21px;
+  width: 33px;
+  top: 4px;
+  left: 3px;
 }
 
 .shape3 {
-    background-color: #ddd8d8;
-    position: absolute;
-    height: 34px;
-    width: 40px;
-    opacity: 0.9;
-    bottom: 28px;
-    right: 40px;
-    border-radius: 20px;
-    cursor: -webkit-grabbing;
+  background-color: #ddd8d8;
+  position: absolute;
+  height: 34px;
+  width: 40px;
+  opacity: 0.9;
+  bottom: 28px;
+  right: 40px;
+  border-radius: 20px;
+  cursor: -webkit-grabbing;
 }
 
 .shape3 svg {
-    position: absolute;
-    height: 24px;
-    width: 38px;
-    top: 4px;
-    left: 1px;
+  position: absolute;
+  height: 24px;
+  width: 38px;
+  top: 4px;
+  left: 1px;
 }
 
-
 .card-container:hover .icons {
-    transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
 }
 
 .card-container:hover .save-text {
-    transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
 }
 
 .image:hover {
-    scale: 1.1;
-    box-shadow: -13px -10px 8px #727070;
+  scale: 1.1;
+  box-shadow: -13px -10px 8px #727070;
 }
 
-
 .image:after {
-    content: '';
-    top: 0;
-    transform: translateX(100%);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 2;
-    animation: slide 2s infinite 2s ease;
+  content: "";
+  top: 0;
+  transform: translateX(100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  animation: slide 2s infinite 2s ease;
 
-    /* 
+  /* 
   CSS Gradient - complete browser support from http://www.colorzilla.com/gradient-editor/ 
   */
-    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.8)), color-stop(99%, rgba(128, 186, 232, 0)), color-stop(100%, rgba(125, 185, 232, 0)));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
-    /* IE10+ */
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
-    /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#007db9e8', GradientType=1);
-    /* IE6-9 */
+  background: -moz-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(128, 186, 232, 0) 99%,
+    rgba(125, 185, 232, 0) 100%
+  );
+  /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0%, rgba(255, 255, 255, 0)),
+    color-stop(50%, rgba(255, 255, 255, 0.8)),
+    color-stop(99%, rgba(128, 186, 232, 0)),
+    color-stop(100%, rgba(125, 185, 232, 0))
+  );
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(128, 186, 232, 0) 99%,
+    rgba(125, 185, 232, 0) 100%
+  );
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(128, 186, 232, 0) 99%,
+    rgba(125, 185, 232, 0) 100%
+  );
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(128, 186, 232, 0) 99%,
+    rgba(125, 185, 232, 0) 100%
+  );
+  /* IE10+ */
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(128, 186, 232, 0) 99%,
+    rgba(125, 185, 232, 0) 100%
+  );
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#007db9e8', GradientType=1);
+  /* IE6-9 */
 }
 
 /* animation */
 
 @keyframes slide {
-    0% {
-        transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(-100%);
+  }
 
-    100% {
-        transform: translateX(100%);
-    }
-
+  100% {
+    transform: translateX(100%);
+  }
 }
